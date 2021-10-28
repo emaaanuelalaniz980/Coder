@@ -1,0 +1,24 @@
+nav {
+    background-color: $azulcito;
+
+    .nav-index {
+        &__ul {
+            box-shadow: 8px 4px 2px $rosita;
+        }
+
+        &__li {
+            font-size: 18px ;
+           
+            &--activo {
+                background-color: $rosita;
+            
+            }
+            .nav-link{
+                color: $blanquito !important;
+            }
+
+        }
+
+
+    }
+}

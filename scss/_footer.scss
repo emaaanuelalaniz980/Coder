@@ -1,0 +1,11 @@
+footer {
+    color: rgb(19, 19, 19);
+    border: $rosita 5px solid;
+    padding: 10px;
+    background: linear-gradient(80deg, $rosita, $azulcito);
+
+    .LogoFooter {
+        width: 70%;
+        text-align: right;
+    }
+}

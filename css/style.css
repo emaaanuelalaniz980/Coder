@@ -1,0 +1,232 @@
+* {
+    font-family: 'Gluten', cursive;
+}
+
+body {
+    background-color: white(0, 0, 0);
+    margin: 0;
+    padding: 0px;
+}
+
+
+
+header {
+    text-align: center;
+    border: rgb(236, 135, 206) 5px solid;
+}
+
+.imagenPortada {
+    width: 100%;
+    border: rgb(20, 24, 75) 5px solid;
+
+}
+
+h1,
+h2 {
+    color: rgb(20, 24, 75);
+    margin: 0;
+    
+}
+ 
+@keyframes aparecer{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.ani{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+h3,
+h4 {
+    color: rgb(20, 24, 75);
+}
+
+p {
+    font-family: 'Grey Qo', cursive;
+    font-size: 30px;
+    color: rgb(20, 24, 75);
+}
+.btn-primary{
+    background-color: rgb(236, 135, 206) !important;
+}
+.botonInfo {
+    background-color: aqua;
+    border: blue 2px solid;
+    padding: 10px;
+    text-decoration: none;
+}
+/*Empieza el menu*/
+nav {
+    background-color: rgb(20, 24, 75);
+  
+
+}
+
+
+.menu {
+    background-color: white;
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto ;
+    text-align: center;
+}
+
+.menu>li {
+display: inline-block;
+text-align: center;
+list-style: none;
+border: black 2px solid;
+margin: 1px;
+}
+
+.menu li>a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px ;
+    color: rgb(20, 24, 75);
+}
+
+.menu li>a:hover {
+    background-color: rgb(20, 24, 75);
+    color: white;
+}
+
+.menu li ul{
+    display:none;
+}
+        
+.menu li:hover ul{
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 53%;
+    color: black;
+    background: beige;
+}
+
+
+
+
+footer {
+    color: rgb(19, 19, 19);
+    border: rgb(236, 135, 206) 5px solid;
+    padding: 10px;
+    margin-top: 40px;
+    background:linear-gradient(80deg, rgb(236, 135, 206),rgb(20, 24, 75));
+
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+hr {
+    border-color: rgb(236, 135, 206);
+}
+
+.logo {
+    width: 70px;
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+/*Aca empieza contacto*/
+.formulario {
+    color: rgb(20, 24, 75);
+}
+
+
+
+table {
+    border: 3px solid rgb(236, 135, 206);
+    color: rgb(20, 24, 75);
+}
+
+
+th {
+    background-color: rgb(236, 135, 206);
+    border: 1px solid;
+    color: black;
+}
+
+tr,
+td {
+    border: 1px solid rgb(20, 24, 75);;
+
+}
+
+
+.LogoFooter{
+    width: 70%;
+    text-align: right;
+}
+
+/*Noticias*/
+.noticia{
+    display: inline-flex;
+}
+.noticia div {
+    display: inline-block;
+    text-align: center;
+    }
+
+/*galeria*/
+.grid{
+    border: 7px solid rgb(236, 135, 206);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 23%;
+    padding: 2px;
+    margin: 2px;
+    grid-column-gap:10px ; 
+
+}
+.arg{
+    width: 100%;
+}
+
+.psg{
+width: 100%;
+}
+.grid img:hover{
+    transform: scale(150%);
+    transition: 3s;
+}
+.fcb{
+    width: 100%;
+}
+.messi{
+    width: 100%;
+
+}
+
+@media only screen and (max-width:768px){
+    .menu{
+        width: auto !important ;
+    
+    }
+    .menu>li {
+        display: block !important;
+    }
+
+   .grid{
+       grid-template-columns: 50% 50% ;
+   margin: 0px !important;
+   grid-column-gap: 3px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+}

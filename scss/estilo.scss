@@ -1,0 +1,49 @@
+@import"colores";
+@import"mixin";
+@import"header";
+@import"nav";
+@import"main";
+@import"footer";
+
+* {
+    font-family: 'Gluten', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.logo {
+    width: 70px;
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background-color: $blanquito ;
+    margin: 0;
+    padding: 0px;
+    @include h(1,40,$azulcito);
+    @include h(2,32,$azulcito);
+    @include h(3,30,$blanquito);
+    @include h(4,25,$rosita);
+    @include h(5,20,$azulcito);
+    
+ 
+}
+@each $name-color, $bgcolor in $colors {
+    .link--#{$name-color} {
+        color: $bgcolor;
+    }
+}
+ 
+ 

@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    border: $rosita 5px solid;
+
+    .container {
+        .row {
+            .ani {
+                animation-duration: 3s;
+                animation-name: aparecer;
+                animation-iteration-count: infinite;
+            }
+
+        }
+    }
+}
